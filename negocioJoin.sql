@@ -42,3 +42,7 @@ INSERT INTO ventas VALUES (0, 2,'Tecclado mecanico mxcd', '2021-06-08');
 SELECT * FROM ventas;
 
 select * from ventas inner join cliente  on ventas.idCliente ;
+select * from cliente inner join ventas  on cliente.Telefono ;
+
+select * from ventas cross join cliente;
+select cliente.nombreClinete, cliente.Telefono, ventas.descripcion from ventas cross join cliente;
