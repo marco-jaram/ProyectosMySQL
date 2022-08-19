@@ -43,19 +43,20 @@ insert into productos  values(0, '  Rascador ', 'Rascador Interactivo Con Aves M
 
 CREATE TABLE IF NOT EXISTS bdMascotaFeliz.venta (
     idVenta INT PRIMARY KEY NOT NULL UNIQUE AUTO_INCREMENT,
-    idCliente int,
+    idCliente INT,
      nombreProducto VARCHAR(40),
      total double,
       FOREIGN KEY (idCliente)
-        REFERENCES cliente (idCliente),
-         FOREIGN KEY (nombreProducto)
-        REFERENCES productos (nombreProductos)
-     
+	 REFERENCES cliente (idCliente)
+       -- FOREIGN KEY (nombreProducto)
+     --  REFERENCES productos (nombreProductos)
 );
-insert into venta  values(0, '3', 'Correa', 793.00);
-insert into venta  values(0, ' 1', 'Cama ',471.00 );
-insert into venta  values(0, ' 6', ' Vacuna', 298.00 );
-insert into venta  values(0, ' 5', ' Abrigo', 678.00);
-insert into venta  values(0, ' 4', ' Collar', 975.99);
-insert into venta  values(0, ' 2', ' Pelota', 564.99);
 
+insert into venta  values(0, 3, 'Correa', 793.00);
+insert into venta  values(0, 2, 'Cama ',471.00 );
+insert into venta  values(0, 6, ' Vacuna', 298.00 );
+insert into venta  values(0, 5, ' Abrigo', 678.00);
+insert into venta  values(0, 4, ' Collar', 975.99);
+insert into venta  values(0, 2, ' Pelota', 564.99);
+drop table venta;
+select * from venta;
