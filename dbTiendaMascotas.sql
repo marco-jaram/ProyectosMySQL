@@ -28,17 +28,17 @@ insert into cliente  values (0, 'Alejandro', 'Hernandez', '6643111567' );
 CREATE TABLE IF NOT EXISTS bdMascotaFeliz.productos (
     idProducto INT PRIMARY KEY NOT NULL UNIQUE AUTO_INCREMENT,
     nombreProductos VARCHAR(50) UNIQUE,
-     descripcion VARCHAR(40),
+     descripcion VARCHAR(50),
      precio double
 );
 insert into productos  values(0, 'Correa', 'Correa grande para perro', 385.00);
 insert into productos  values(0, 'Royal Canin', 'Alimento Seco para Perro Adulto Raza Pequeña ', 1042.50);
 insert into productos  values(0, ' Casa de Exterior', 'Casa de Exterior para Perro, Grande ',  4999.00);
 insert into productos  values(0, 'Mueble Tipo Árbol', 'Árbol de 5 Niveles con Juguete y Arco para Gato ', 2999.00);
-insert into productos  values(0, 'Cama  ', ' Harmony Cama Ovalada Ultra Suave para Gato Color Gris', 169 );
-insert into productos  values(0, 'Tazón de Cerámica ', '  Tazón de Cerámica Good Kitty Blanco para Gato, 3 Tazas', 189 );
-insert into productos  values(0, 'Ratoncitos ', ' Ratoncitos Divertidos con Plumas Colores Surtidos para Gato, 2 Piezas', 47 );
-insert into productos  values(0, ' Pista con Pluma ', ' Pista con Pluma y Pelota con Luz Juguete para Gato, Rosa', 175);
+insert into productos  values(0, 'Cama  ', 'Harmony Cama Ovalada Ultra Suave para Gato Color', 169 );
+insert into productos  values(0, 'Tazón de Cerámica ', 'Tazón de Cerámica Good Kitty Blanco para Gato', 189 );
+insert into productos  values(0, 'Ratoncitos ', ' Ratoncitos con Plumas Colores para Gato, 2 Piezas', 47 );
+insert into productos  values(0, ' Pista con Pluma ', 'Pluma y Pelota con Luz Juguete para Gato, Rosa', 175);
 insert into productos  values(0, '  Rascador ', 'Rascador Interactivo Con Aves Mediano ',135.20 );
 
 CREATE TABLE IF NOT EXISTS bdMascotaFeliz.venta (
@@ -58,6 +58,7 @@ insert into venta  values(0, 6, ' Vacuna', 298.00 );
 insert into venta  values(0, 5, ' Abrigo', 678.00);
 insert into venta  values(0, 4, ' Collar', 975.99);
 insert into venta  values(0, 2, ' Pelota', 564.99);
--- drop table venta;
+drop table productos;
 -- select * from venta;
 -- SET FOREIGN_KEY_CHECKS=0;
+ select * from productos;
