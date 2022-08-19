@@ -18,12 +18,12 @@ CREATE TABLE IF NOT EXISTS bdMascotaFeliz.cliente (
     Telefono VARCHAR(30)
 );
 insert into cliente  values (0, 'Marco',  'Jaramillo',    '6643111567' );
-insert into cliente  values (0, 'Andrea', 'Gonzalez ',    '6643111567' );
-insert into cliente  values (0, 'Martha', 'Castro ',      '6643111567' );
-insert into cliente  values (0, 'Dulce',  'Rodriguez',    '6643111567' );
-insert into cliente  values (0, 'Pedro',  'Perez',        '6643111567' );
-insert into cliente  values (0, 'Natali', 'Garcia ',      '6643111567' );
-insert into cliente  values (0, 'Alejandro', 'Hernandez', '6643111567' );
+insert into cliente  values (0, 'Andrea', 'Gonzalez ',    '6644987500' );
+insert into cliente  values (0, 'Martha', 'Castro ',      '6648762555' );
+insert into cliente  values (0, 'Dulce',  'Rodriguez',    '6648869583' );
+insert into cliente  values (0, 'Pedro',  'Perez',        '6645998834' );
+insert into cliente  values (0, 'Natali', 'Garcia ',      '6645987677' );
+insert into cliente  values (0, 'Alejandro', 'Hernandez', '6649084766' );
 
 CREATE TABLE IF NOT EXISTS bdMascotaFeliz.productos (
     idProducto INT PRIMARY KEY NOT NULL UNIQUE AUTO_INCREMENT,
