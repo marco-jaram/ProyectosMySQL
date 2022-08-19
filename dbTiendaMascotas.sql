@@ -47,9 +47,9 @@ CREATE TABLE IF NOT EXISTS bdMascotaFeliz.venta (
      nombreProducto VARCHAR(40),
      total double,
       FOREIGN KEY (idCliente)
-	 REFERENCES cliente (idCliente)
-       -- FOREIGN KEY (nombreProducto)
-     --  REFERENCES productos (nombreProductos)
+	 REFERENCES cliente (idCliente),
+	FOREIGN KEY (nombreProducto)
+	REFERENCES productos (nombreProductos)
 );
 
 insert into venta  values(0, 3, 'Correa', 793.00);
@@ -58,5 +58,6 @@ insert into venta  values(0, 6, ' Vacuna', 298.00 );
 insert into venta  values(0, 5, ' Abrigo', 678.00);
 insert into venta  values(0, 4, ' Collar', 975.99);
 insert into venta  values(0, 2, ' Pelota', 564.99);
-drop table venta;
-select * from venta;
+-- drop table venta;
+-- select * from venta;
+-- SET FOREIGN_KEY_CHECKS=0;
