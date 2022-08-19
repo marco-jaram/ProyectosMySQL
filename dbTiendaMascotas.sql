@@ -13,7 +13,7 @@ USE bdMascotaFeliz;
 -- Primera tabla Clientes
 CREATE TABLE IF NOT EXISTS bdMascotaFeliz.cliente (
     idCliente INT PRIMARY KEY NOT NULL UNIQUE AUTO_INCREMENT,
-    nombreClinete VARCHAR(50) UNIQUE,
+    nombreCliente VARCHAR(50) UNIQUE,
     apellidoPaterno VARCHAR(40),
     Telefono VARCHAR(30)
 );
@@ -58,7 +58,8 @@ insert into venta  values(0, 6, ' Vacuna', 298.00 );
 insert into venta  values(0, 5, ' Abrigo', 678.00);
 insert into venta  values(0, 4, ' Collar', 975.99);
 insert into venta  values(0, 2, ' Pelota', 564.99);
-drop table productos;
--- select * from venta;
--- SET FOREIGN_KEY_CHECKS=0;
+drop table venta;
+
+SET FOREIGN_KEY_CHECKS=0;
  select * from productos;
+ select * from venta;
