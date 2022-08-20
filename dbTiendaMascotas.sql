@@ -61,6 +61,22 @@ insert into venta  values(0, 2, 'Correa', 793.00);
  -- drop table venta;
 
 SET FOREIGN_KEY_CHECKS=0;
+select * from cliente;
  select * from productos;
  select * from venta;
  select * from cliente;
+ 
+ 
+ -- • Dos consultas empleando el comando natural join para dos tablas 
+ select *from productos cross join venta;
+ select * from cliente inner join venta on venta.idCliente;
+-- • Dos consultas empleando el comando join y on para dos tablas
+select * from venta inner join cliente on venta.idCliente=cliente.idCliente where nombreCliente= 'Andrea';
+select venta.idCliente, venta.nombreProducto, venta.idVenta,  venta.total from venta 
+inner join cliente on venta.idCliente=cliente.idCliente where nombreCliente= 'Dulce';
+
+-- • Dos consultas empleando el comando join en tres tablas
+select venta.nombreProducto, venta.idCliente, venta.total
+from venta 
+inner join productos on venta.idVenta
+inner join cliente on venta.idCliente;
